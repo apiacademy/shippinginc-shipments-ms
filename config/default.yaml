@@ -1,0 +1,7 @@
+app:
+  port: 3000
+  base_url: "docker:5001"
+  media_type: "application/vnd.siren+json"
+  pub_dir: "/public"
+  csrf: false
+  cookie_secret: "Your secret key salt goes here. Replace with random, long string in your project."

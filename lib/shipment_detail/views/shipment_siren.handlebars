@@ -1,0 +1,39 @@
+{
+    "class" : "{{ title }}",
+
+    "properties" : {
+        "tracking_number" : {{number}},
+        "weight" : {{weight}},
+        "total_pieces" : {{pieces}},
+        "packaging" : "{{packaging}}",
+        "dimensions" : "{{dimensions}}",
+        "po_number" : {{po_number}},
+        "destination_address" : "{{destination_address}}"
+    },
+
+    "entities" : [
+    {{#each steps}}
+      {
+        {{#if class}}"class" : ["{{class}}"],{{/if}}
+        "rel" : ["{{rel}}"],
+        "properties" : {
+            "date" : {{date}},
+            "date_human"  : "{{ago}}",
+            "activity" : "{{activity}}",
+            "address" : "{{address}}"
+        }
+      }{{^last}},{{/last}}
+    {{/each}}
+    ],
+
+    "links" : [
+    {{#each affordances}}
+        {
+        {{#if class}}"class" : ["{{class}}"],{{/if}}
+        "rel" : ["{{rel}}"],
+        "href" : "{{../base_url}}{{url}}"
+        }{{^last}},{{/last}}
+
+    {{/each}}
+    ]
+}
