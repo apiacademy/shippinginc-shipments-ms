@@ -1,7 +1,5 @@
 FROM irakli/alpine-nodejs-runit:latest
 
-VOLUME /opt/application
-
 ENV REFRESHED_AT 2015-10-31-23_00
 
 COPY runit /etc/service/node-app
