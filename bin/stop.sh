@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 if [ !$NODE_LAUNCH_SCRIPT ]; then
   export NODE_LAUNCH_SCRIPT="$PWD/server.js"

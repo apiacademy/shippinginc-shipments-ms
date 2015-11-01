@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 export NODE_ENV=development
 # Note: hot reloading and clustering don't always work well together so you may want to disable clustering in dev
