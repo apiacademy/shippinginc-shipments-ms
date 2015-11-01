@@ -4,4 +4,4 @@ api:
   volumes:
     - .:/opt/application  
   ports:
-   - ":3000"
+   - "5002:3000"
