@@ -1,6 +1,6 @@
 FROM irakli/alpine-nodejs-runit:latest
 
-ENV REFRESHED_AT 2015-10-31-23_00
+ENV REFRESHED_AT 2015-10-31-23_55
 
 COPY runit /etc/service/node-app
 RUN  chmod -R 755 /etc/service/node-app
