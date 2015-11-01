@@ -8,9 +8,9 @@ COPY runit /etc/service/node-app
 RUN  chmod -R 755 /etc/service/node-app
 RUN npm install -g supervisor
 
-ONBUILD ADD ./ /opt/application
-ONBUILD WORKDIR /opt/application
-ONBUILD RUN npm install
+ADD ./ /opt/application
+WORKDIR /opt/application
+RUN npm install
 
 EXPOSE 3000
 
