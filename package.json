@@ -2,6 +2,7 @@
   "name": "shipping-shipments-microservice",
   "private": true,
   "description": "",
+  "version" : "0.9.0",
   "author": "",
   "license": {
     "type": "MIT",
@@ -18,6 +19,7 @@
   "dependencies": {
     "body-parser": "^1.14.1",
     "config": "^1.16.0",
+    "connect-service-healthcheck": "^3.0.0",
     "consolidate": "^0.13.1",
     "express": "^4.11.0",
     "faker": "^3.0.1",
